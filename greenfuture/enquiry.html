@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Get involved with Green Cape Town. Volunteer, donate, or partner with us to make Cape Town greener." />
+  <meta name="keywords" content="volunteer Cape Town, donate environmental cause, get involved sustainability, join Green Cape Town" />
+  <title>Get Involved - Green Cape Town</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo" aria-label="Green Cape Town Home">Green CT</a>
+      <nav aria-label="Main navigation">
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="enquiry.html">Enquiry</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-header">
+      <div class="container">
+        <h1>Get Involved</h1>
+        <p>Join us in making Cape Town greener – every action counts</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 style="text-align: center; margin-bottom: 2rem;">How You Can Help</h2>
+        <div class="grid">
+          <div class="card">
+            <h3> Volunteer Your Time</h3>
+            <p>Join our tree-planting events, workshops, or clean-up days. No experience needed – just bring your enthusiasm!</p>
+          </div>
+          <div class="card">
+            <h3> Make a Donation</h3>
+            <p>Financial support helps us buy seedlings, tools, and educational materials for our programs.</p>
+          </div>
+          <div class="card">
+            <h3> Share Your Skills</h3>
+            <p>We need graphic designers, web developers, photographers, writers, and more to support our work.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt-bg">
+      <div class="container">
+        <h2 style="text-align: center; margin-bottom: 2rem;">Submit Your Enquiry</h2>
+        <p style="text-align: center; margin-bottom: 2rem;">Fill out the form below and we'll get back to you within 48 hours. All fields marked with <span class="required">*</span> are required.</p>
+
+        <form class="form" id="enquiry-form" novalidate>
+          <fieldset>
+            <legend>Personal Information</legend>
+            
+            <div class="form-row">
+              <label for="full-name">Full Name <span class="required">*</span></label>
+              <input id="full-name" type="text" name="fullName" required placeholder="e.g., John Doe" minlength="2" />
+              <span class="error" id="full-name-error"></span>
+            </div>
+
+            <div class="form-row">
+              <label for="email">Email Address <span class="required">*</span></label>
+              <input id="email" type="email" name="email" required placeholder="e.g., john@example.com" />
+              <span class="error" id="email-error"></span>
+            </div>
+
+            <div class="form-row">
+              <label for="phone">Phone Number <span class="required">*</span></label>
+              <input id="phone" type="tel" name="phone" required placeholder="e.g., 021 123 4567" />
+              <span class="error" id="phone-error"></span>
+            </div>
+
+            <div class="form-row">
+              <label for="age">Age Group <span class="required">*</span></label>
+              <select id="age" name="ageGroup" required>
+                <option value="">Select your age group</option>
+                <option value="under-18">Under 18</option>
+                <option value="18-25">18-25</option>
+                <option value="26-35">26-35</option>
+                <option value="36-50">36-50</option>
+                <option value="over-50">Over 50</option>
+              </select>
+              <span class="error" id="age-error"></span>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Your Interest</legend>
+            
+            <div class="form-row">
+              <label for="interest">How would you like to get involved? <span class="required">*</span></label>
+              <select id="interest" name="interest" required>
+                <option value="">Select an option</option>
+                <option value="volunteer">Volunteer at Events</option>
+                <option value="donate">Make a Donation</option>
+                <option value="skills">Share Professional Skills</option>
+                <option value="partnership">Partnership/Sponsorship</option>
+                <option value="school">School Partnership</option>
+                <option value="other">Other</option>
+              </select>
+              <span class="error" id="interest-error"></span>
+            </div>
+
+            <div class="form-row">
+              <label for="message">Message <span class="required">*</span></label>
+              <textarea id="message" name="message" rows="5" required placeholder="Tell us more about your interest..." minlength="10"></textarea>
+              <span class="error" id="message-error"></span>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Consent</legend>
+            
+            <div class="form-row">
+              <label>
+                <input type="checkbox" id="terms" name="terms" required />
+                I agree to the Privacy Policy and Terms of Use <span class="required">*</span>
+              </label>
+              <span class="error" id="terms-error"></span>
+            </div>
+          </fieldset>
+
+          <button type="submit" class="btn">Submit Enquiry</button>
+          <button type="reset" class="btn btn--ghost">Clear Form</button>
+          <p id="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Green Cape Town</h3>
+          <p>Planting the future, one tree at a time.</p>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="enquiry.html">Get Involved</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Social</h3>
+          <ul class="social">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <p style="text-align: center; margin-top: 2rem; opacity: 0.8;">&copy; 2025 Green Cape Town. All rights reserved.</p>
+      <p style="text-align: center; font-size: 0.9rem; opacity: 0.7;">Images used under Creative Commons licenses.</p>
+    </div>
+  </footer>
+
+  <script src="files/js/main.js"></script>
+</body>
+</html>
